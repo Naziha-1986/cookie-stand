@@ -35,9 +35,10 @@ let seattl = {
 
             this.totalcookies = this.totalcookies + this.totalCookihoutr[i];
             console.log(this.totalcookies);
-
+            
 
         }
+        li2.textContent = 'total=' + this.totalcookies;
     }
 
 };
@@ -74,6 +75,7 @@ let Tokyo = {
             this.totalcookies = this.totalcookies + this.totalCookihoutr[i];
             console.log(this.totalcookies);
         }
+        li2.textContent = 'total=' + this.totalcookies;
     }
 
 };
@@ -114,6 +116,7 @@ let Dubai = {
 
 
         }
+        li2.textContent = 'total=' + this.totalcookies;
     }
 
 };
@@ -154,6 +157,7 @@ let Paris = {
 
 
         }
+        li2.textContent = 'total=' + this.totalcookies;
     }
 
 };
@@ -193,6 +197,7 @@ let Lima = {
 
 
         }
+        li2.textContent = 'total=' + this.totalcookies;
     }
 
 };

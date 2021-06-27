@@ -198,7 +198,7 @@ let Lima = {
 
         }
         li2.textContent = 'total=' + this.totalcookies;
-        document.write();
+    
     }
 
 };

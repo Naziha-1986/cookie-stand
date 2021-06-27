@@ -29,9 +29,9 @@ let seattl = {
             liElm.textContent = this.hours[i] + ':' + this.totalCookihoutr[i];
             ulEl.appendChild(liElm);
 
-            let liSum=document.createElement('li');
-            liSum.textContent='total ${sum}';
-            ulEl.appendChild(liSum);
+            // let liSum=document.createElement('li');
+            // liSum.textContent='total ${sum}';
+            // ulEl.appendChild(liSum);
 
             this.totalcookies = this.totalcookies + this.totalCookihoutr[i];
             console.log(this.totalcookies);
@@ -56,7 +56,6 @@ let Tokyo = {
     },
     totalCookihoutr: [],
     totalcookies: 0,
-
     render: function () {
         let TokyolEl = document.getElementById('TokyoEl');
         let ulEl = document.createElement('ul');
@@ -65,9 +64,7 @@ let Tokyo = {
         // let sum = 0;
         for (let i = 0; i < this.hours.length; i++) {
             // sum+=this.totalcookies[i];
-
             this.totalCookihoutr.push(Math.floor(this.customerPerhour(this.min, this.max) * this.Avg));
-
         }
         for (let i = 0; i < this.totalCookihoutr.length; i++) {
             let liElm = document.createElement('li');
@@ -76,8 +73,6 @@ let Tokyo = {
             ulEl.appendChild(liElm);
             this.totalcookies = this.totalcookies + this.totalCookihoutr[i];
             console.log(this.totalcookies);
-
-
         }
     }
 

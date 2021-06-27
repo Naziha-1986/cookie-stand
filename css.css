@@ -1,6 +1,7 @@
 
 h1{
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: chartreuse;
     background-color: darkgray;
 }
@@ -8,12 +9,13 @@ h1{
 p{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     color: darkkhaki;
+    size: 202px;
 
 }
 div{
     font-family:Arial, Helvetica, sans-serif;
-    color:red;
-    background-color: blue;
+    color:rgb(13, 24, 21);
+    background-color: rgb(153, 221, 187);
 }
 
 #foot{

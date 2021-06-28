@@ -179,7 +179,7 @@ let Lima = {
         let LimalEl = document.getElementById('LimalEl');
         let ulEl = document.createElement('ul');
         ulEl.textContent = 'Lima';
-        ParislEl.appendChild(ulEl);
+        LimalEl.appendChild(ulEl);
         // let sum = 0;
         for (let i = 0; i < this.hours.length; i++) {
             // sum+=this.totalcookies[i];

@@ -1,0 +1,26 @@
+
+h1{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: chartreuse;
+    background-color: darkgray;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: darkkhaki;
+    size: 202px;
+
+}
+div{
+    font-family:'Oswald', sans-serif;
+    color:rgb(13, 24, 21);
+    background-color: rgb(153, 221, 187);
+}
+
+#foot{
+    color: blueviolet;
+    background-color: burlywood;
+    font-family: 'Kirang Haerang', cursive;
+}
+

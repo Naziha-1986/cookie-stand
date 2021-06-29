@@ -16,6 +16,7 @@ div{
     font-family:'Oswald', sans-serif;
     color:rgb(13, 24, 21);
     background-color: rgb(153, 221, 187);
+    
 }
 
 #foot{
@@ -24,3 +25,9 @@ div{
     font-family: 'Kirang Haerang', cursive;
 }
 
+table,
+tr,
+th,
+td {
+  border: 1px solid;
+}

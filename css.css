@@ -15,14 +15,8 @@ header{
         position: sticky;
         top: 0;
     
+}
 
-}
-footer {
-    text-decoration: none;
-    text-shadow: 2px brown;
-    background-color: rgb(178, 223, 165);
-    text-align: center;
-}
 
 h2{
     background-color: cadetblue;
@@ -35,13 +29,26 @@ h3{
     background-color: darkgray;
     color: rgb(13, 8, 31);
     font-size: 33px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 hr.new5 {
     border: 10px solid green;
     border-radius: 5px;
     
 }
-nav{
+
+
+
+
+li {
+    margin-right: 40%;
+}
+.nav2 li {
+    margin-right: 108px;
+}
+ nav{
+
     text-align: center;
     padding: 13px ;
     background-color: blanchedalmond;
@@ -50,11 +57,12 @@ nav{
 
 
 
-}
+
+} 
 
 
 
-}
+
 h1{
     text-align: center;
     font-family: 'Big Shoulders Stencil Display', cursive;
@@ -66,24 +74,23 @@ p{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     color: darkkhaki;
     size: 202px;
-
 }
+   
+
 div{
     font-family:'Oswald', sans-serif;
     color:rgb(13, 24, 21);
     background-color: rgb(153, 221, 187);
     
 }
+#images{
+    display: inline-block;
+    width: 7px;
 
+}
 #foot{
     color: blueviolet;
     background-color: burlywood;
     font-family: 'Kirang Haerang', cursive;
 }
 
-table,
-tr,
-th,
-td {
-  border: 1px solid;
-}

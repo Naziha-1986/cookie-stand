@@ -4,16 +4,54 @@
 * {
     box-sizing: border-box;
 } 
-nav{
-    text-align: center;
-    padding: 33px ;
-    background-color: blanchedalmond;
-    color: brown;
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+  
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
     
 
 }
-nav ul li{
-text-decoration: none;
+footer {
+    text-decoration: none;
+    text-shadow: 2px brown;
+    background-color: rgb(178, 223, 165);
+    text-align: center;
+}
+
+h2{
+    background-color: cadetblue;
+    color: crimson;
+    font-size: 57px;
+    text-align: center;
+}
+
+h3{
+    background-color: darkgray;
+    color: rgb(13, 8, 31);
+    font-size: 33px;
+}
+hr.new5 {
+    border: 10px solid green;
+    border-radius: 5px;
+    
+}
+nav{
+    text-align: center;
+    padding: 13px ;
+    background-color: blanchedalmond;
+    color: rgb(61, 141, 85);
+    font-size: large;
+
+
+
+}
+
 
 
 }

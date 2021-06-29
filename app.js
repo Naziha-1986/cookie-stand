@@ -33,16 +33,16 @@ Location.prototype.calcAngCookiesPerH= function() {
  }
 };
 
-// Location.prototype.calTotalCulmn=function(){
-//     for (let i=0; i <Location.length; i++){
-//         this.randCust(this.min, this.max);
-//         this.purchase();
+Location.prototype.calTotalCulmn=function(){
+    for (let i=0; i <Location.length; i++){
+        this.randCust(this.min, this.max);
+        this.purchase();
     
 
-//     }
+    }
 
-//     this.total.push(this.purchase);
-// };
+    this.total.push(this.purchase);
+};
 
 
 // create table
@@ -58,85 +58,85 @@ function createTableHeader() {
  tableEl.appendChild(trEl);
 
 
-//  create column empty title
- let thEl1 = document.createElement('th');
- thEl1.textContent = '';
- trEl.appendChild(thEl1);
+// //  create column empty title
+//  let thEl1 = document.createElement('th');
+//  thEl1.textContent = '';
+//  trEl.appendChild(thEl1);
 
-// loop for header rows
- for(let i = 0; i < hours.length; i++) {
- let thEl2 = document.createElement('th');
- thEl2.textContent = hours[i];
- trEl.appendChild(thEl2);
- }
+// // loop for header rows
+//  for(let i = 0; i < hours.length; i++) {
+//  let thEl2 = document.createElement('th');
+//  thEl2.textContent = hours[i];
+//  trEl.appendChild(thEl2);
+//  }
  
-// create column for dialy total
- let thEl3 = document.createElement('th');
- thEl3.textContent = 'daily Total';
- trEl.appendChild(thEl3);
-}
-createTableHeader();
+// // create column for dialy total
+//  let thEl3 = document.createElement('th');
+//  thEl3.textContent = 'daily Total';
+//  trEl.appendChild(thEl3);
+// }
+// createTableHeader();
 
-// first location
-let seattle = new Location('Seattle', 23, 65, 6.3);
-// random number
-seattle.calCusPerHour();
-// hourly total
-seattle.calcAngCookiesPerH();
+// // first location
+// let seattle = new Location('Seattle', 23, 65, 6.3);
+// // random number
+// seattle.calCusPerHour();
+// // hourly total
+// seattle.calcAngCookiesPerH();
 
-// second location
-let tokyo = new Location('Tokyo', 3, 24, 1.2);
-tokyo.calCusPerHour();
-tokyo.calcAngCookiesPerH();
+// // second location
+// let tokyo = new Location('Tokyo', 3, 24, 1.2);
+// tokyo.calCusPerHour();
+// tokyo.calcAngCookiesPerH();
 
-// third location
-let dubai = new Location('Dubai', 11, 38, 3.7);
-dubai.calCusPerHour();
-dubai.calcAngCookiesPerH();
+// // third location
+// let dubai = new Location('Dubai', 11, 38, 3.7);
+// dubai.calCusPerHour();
+// dubai.calcAngCookiesPerH();
 
 
-// fourth location
-let paris = new Location('Paris', 20, 38, 2.3);
-paris.calCusPerHour();
-paris.calcAngCookiesPerH();
+// // fourth location
+// let paris = new Location('Paris', 20, 38, 2.3);
+// paris.calCusPerHour();
+// paris.calcAngCookiesPerH();
 
-// fifth location
-let lima = new Location('liam', 2, 16, 4.6);
-lima.calCusPerHour();
-lima.calcAngCookiesPerH();
+// // fifth location
+// let lima = new Location('liam', 2, 16, 4.6);
+// lima.calCusPerHour();
+// lima.calcAngCookiesPerH();
 
-// creat places rows for all random numbers
+// // creat places rows for all random numbers
 
-for(let i=0;i < places.length;i++){
- let trEl = document.createElement('tr');
- let td1 = document.createElement('td');
- td1.textContent = places[i].name;
- trEl.appendChild(td1);
+// for(let i=0;i < places.length;i++){
+//  let trEl = document.createElement('tr');
+//  let td1 = document.createElement('td');
+//  td1.textContent = places[i].name;
+//  trEl.appendChild(td1);
 
-// creat rows total hourly for each place
+// // creat rows total hourly for each place
 
- let td2 = document.createElement('td');
- td2.textContent = places[i].avgCookiesPerH;
- trEl.appendChild(td2);
+//  let td2 = document.createElement('td');
+//  td2.textContent = places[i].avgCookiesPerH;
+//  trEl.appendChild(td2);
 
- tableEl.appendChild(trEl);
-}
+//  tableEl.appendChild(trEl);
+// }
 
-// create footer
-function makeTableFooter() {
- let trEl = document.createElement('tr');
- tableEl.appendChild(trEl);
+// // create footer
+// function makeTableFooter() {
+//  let trEl = document.createElement('tr');
+//  tableEl.appendChild(trEl);
  
-// create total footer
- let thEl10 = document.createElement('th');
- thEl10.textContent = 'Totals';
- trEl.appendChild(thEl10);
+// // create total footer
+//  let thEl10 = document.createElement('th');
+//  thEl10.textContent = 'Totals';
+//  trEl.appendChild(thEl10);
 
-}
+// }
 
-makeTableFooter();
+// makeTableFooter();
 
- console.log(places);
+//  console.log(places);
 
 
 

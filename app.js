@@ -97,6 +97,7 @@ let dubai = new Shop('Dubai', 11, 38, 3.7);
 let paris = new Shop('Paris', 20, 38, 2.3);
 let lima = new Shop('Lima', 2, 16, 4.6);
 
+
 createTableHeader();
 for (let i = 0; i < shops.length; i++) {
     shops[i].calcRandCustPerH();
@@ -104,3 +105,67 @@ for (let i = 0; i < shops.length; i++) {
     shops[i].render();
 }
 createFooter();
+
+
+
+// ***************************************************/
+let myForm = document.getElementById('myForm');
+
+myForm.addEventListener('submit', addLocation);
+
+function addLocation(event) {
+    // name.min,max, avg
+    event.preventDefault();
+    // name
+    let getLocationName = event.target.getLocationName.value;
+    // min
+    let getMinNumber = parseInt(event.target.getMinNumber.value);
+    // max
+    let getMaxNumber = parseInt(event.target.getMaxNumber.value);
+    // avg
+    let getAvgNumber = event.target.getAvgNumber.value;
+
+
+    let newLocation = new Shop(getLocationName, getMinNumber, getMaxNumber, getAvgNumber);
+
+
+
+
+
+
+    // locationTable.innerHTML = '';
+    // header();
+    // cellData();
+   
+        newLocation.render();
+
+    
+    // createFooter();
+}
+
+
+
+
+// form = addEventListener('submit', newSubmit);
+
+// function newSubmit(event) {
+//     event.preventDefault();
+
+//     var newName = event.target.shopName.value;
+//     var newMin = parseInt(event.target.minCus.value);
+//     var newMax = parseInt(event.target.maxCus.value);
+//     var newAvg = event.target.avgCookies.value;
+
+//     new Shop(newName, newMin, newMax, newAvg);
+
+//     locationTable.innerHTML = '';
+//     header();
+//     cellData();
+//     for (var i = 0; i < locations.length; i++) {
+//         locations[i].avgCookiesPerHour = [];
+//         locations[i].getCusPerHour();
+//         locations[i].getAvgCookiesPerHour();
+//         locations[i].render();
+//     }
+//     footer();
+// }

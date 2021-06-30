@@ -13,16 +13,41 @@
 
 <body>
     <header>
-<a href="index.html">Index.html</a>
+        <a href="index.html">Index.html</a>
 
     </header>
     <main>
-        <div id="locations"></div>
 
-        <footer>
+        <form action="" id="myForm">
+        <fieldset>
+            <legend>add a new location</legend>
+            <label for="getLocationName">location name:</label>
+            <input type="text" id="getLocationName" name="getLocationName"placeholder="location name">
+
            
-        </footer>
-        <script src="app.js"></script>
+            <label for="getMinNumber">Min</label>
+            <input type="text" id="getMinNumber" name="getMinNumber"placeholder="Min Number">
+
+
+           
+            <label for="getMaxNumber">Max</label>
+            <input type="text" id="getMaxNumber" name="getMaxNumber"placeholder="Max Number">
+
+
+         
+            <label for="getAvgNumber">Avg</label>
+            <input type="text" id="getAvgNumber" name="getAvgNumber"placeholder="Avg Number">
+
+            <input type="submit" value="add location" >
+
+        </fieldset>
+    </form>
+        <div id="locations"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>

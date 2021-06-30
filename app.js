@@ -131,25 +131,17 @@ function addLocation(event) {
 
     let newLocation = new Shop(getLocationName, getMinNumber, getMaxNumber, getAvgNumber);
 
+    
     shops.push(newLocation);
     newLocation.calcRandCustPerH();
     newLocation.calAvgCookiesPerH();
     newLocation.render();
+ 
+    
+    
+
 
 }
 
 
 
-
-
-//     locationTable.innerHTML = '';
-//     header();
-//     cellData();
-//     for (var i = 0; i < locations.length; i++) {
-//         locations[i].avgCookiesPerHour = [];
-//         locations[i].getCusPerHour();
-//         locations[i].getAvgCookiesPerHour();
-//         locations[i].render();
-//     }
-//     footer();
-// }

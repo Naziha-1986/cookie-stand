@@ -103,10 +103,12 @@ for (let i = 0; i < shops.length; i++) {
     shops[i].calcRandCustPerH();
     shops[i].calAvgCookiesPerH();
     shops[i].render();
+
+
 }
+
+
 createFooter();
-
-
 
 // ***************************************************/
 let myForm = document.getElementById('myForm');
@@ -116,6 +118,7 @@ myForm.addEventListener('submit', addLocation);
 function addLocation(event) {
     // name.min,max, avg
     event.preventDefault();
+
     // name
     let getLocationName = event.target.getLocationName.value;
     // min
@@ -128,35 +131,16 @@ function addLocation(event) {
 
     let newLocation = new Shop(getLocationName, getMinNumber, getMaxNumber, getAvgNumber);
 
+    shops.push(newLocation);
+    newLocation.calcRandCustPerH();
+    newLocation.calAvgCookiesPerH();
+    newLocation.render();
 
-
-
-
-
-    // locationTable.innerHTML = '';
-    // header();
-    // cellData();
-   
-        newLocation.render();
-
-    
-    // createFooter();
 }
 
 
 
 
-// form = addEventListener('submit', newSubmit);
-
-// function newSubmit(event) {
-//     event.preventDefault();
-
-//     var newName = event.target.shopName.value;
-//     var newMin = parseInt(event.target.minCus.value);
-//     var newMax = parseInt(event.target.maxCus.value);
-//     var newAvg = event.target.avgCookies.value;
-
-//     new Shop(newName, newMin, newMax, newAvg);
 
 //     locationTable.innerHTML = '';
 //     header();

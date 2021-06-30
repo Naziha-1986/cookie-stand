@@ -94,3 +94,25 @@ div{
     font-family: 'Kirang Haerang', cursive;
 }
 
+
+
+table,
+td,
+th {
+  border: 11px solid red;
+  background-color: burlywood;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+
+}
+
+
+ form{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: cornsilk;
+    padding: 22px;
+    margin-top: 1%;
+
+}

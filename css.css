@@ -38,27 +38,15 @@ hr.new5 {
     
 }
 
-
+main{
+     background-image: url('img_girl.jpg');
+    }
 
 
 li {
-    margin-right: 40%;
+    margin-right: 10%;
 }
-.nav2 li {
-    margin-right: 108px;
-}
- nav{
 
-    text-align: center;
-    padding: 13px ;
-    background-color: blanchedalmond;
-    color: rgb(61, 141, 85);
-    font-size: large;
-
-
-
-
-} 
 
 
 
@@ -85,7 +73,9 @@ div{
 }
 #images{
     display: inline-block;
-    width: 7px;
+    /* width: 1%; */
+    float: left;
+    padding: 10%;
 
 }
 #foot{
@@ -116,3 +106,48 @@ th {
     margin-top: 1%;
 
 }
+
+#n1 {
+    background-image: url();
+  }
+
+  /* background */
+
+  body {
+    -webkit-animation: colorchange 20s infinite;
+    animation: colorchange 20s infinite;
+  }
+  @-webkit-keyframes colorchange {
+    0% {
+      background: #8ebf42;
+    }
+    25% {
+      background: #e6ebef;
+    }
+    50% {
+      background: #1c87c9;
+    }
+    75% {
+      background: #095484;
+    }
+    100% {
+      background: #d0e2bc;
+    }
+  }
+  @keyframes colorchange {
+    0% {
+      background: #8ebf42;
+    }
+    25% {
+      background: #e6ebef;
+    }
+    50% {
+      background: #1c87c9;
+    }
+    75% {
+      background: #095484;
+    }
+    100% {
+      background: #d0e2bc;
+    }
+  }

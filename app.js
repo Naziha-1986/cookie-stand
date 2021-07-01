@@ -65,6 +65,15 @@ function createTableHeader() {
 function createFooter() {
     let tfootEl = document.createElement('tfoot');
     let tdEl = document.createElement('td');
+
+
+
+
+// window.tfootEl=footer;
+
+
+
+
     tdEl.textContent = 'Totals';
     tfootEl.appendChild(tdEl);
     tableEl.appendChild(tfootEl);
@@ -104,7 +113,6 @@ for (let i = 0; i < shops.length; i++) {
     shops[i].calAvgCookiesPerH();
     shops[i].render();
 
-
 }
 
 
@@ -131,25 +139,18 @@ function addLocation(event) {
 
     let newLocation = new Shop(getLocationName, getMinNumber, getMaxNumber, getAvgNumber);
 
+    
     shops.push(newLocation);
-    newLocation.calcRandCustPerH();
+     newLocation.calcRandCustPerH();
     newLocation.calAvgCookiesPerH();
     newLocation.render();
+ 
+    tableEl.deleteTFoot();
+    createFooter();
+    // rest last row in the table
+    // footer.textContent= null;
 
 }
 
 
 
-
-
-//     locationTable.innerHTML = '';
-//     header();
-//     cellData();
-//     for (var i = 0; i < locations.length; i++) {
-//         locations[i].avgCookiesPerHour = [];
-//         locations[i].getCusPerHour();
-//         locations[i].getAvgCookiesPerHour();
-//         locations[i].render();
-//     }
-//     footer();
-// }

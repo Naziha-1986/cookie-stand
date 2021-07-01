@@ -11,15 +11,16 @@ html{
 
 header{
   
-        position: -webkit-sticky; /* Safari */
+        padding: 2%;
         position: sticky;
         top: 0;
-    
+        font-family: 'Krona One', sans-serif;
+    text-decoration: none;
 }
 
 
 h2{
-    background-color: cadetblue;
+    background-color: rgb(158, 168, 168);
     color: crimson;
     font-size: 57px;
     text-align: center;
@@ -33,15 +34,16 @@ h3{
 }
 
 hr.new5 {
-    border: 10px solid green;
+    border: 10px solid rgb(61, 12, 46);
     border-radius: 5px;
     
 }
-
+/* 
 main{
      background-image: url('img_girl.jpg');
-    }
+    } */
 
+    
 
 li {
     margin-right: 10%;
@@ -60,7 +62,7 @@ h1{
 
 p{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    color: darkkhaki;
+    color: rgb(150, 13, 24);
     size: 202px;
 }
    
@@ -71,6 +73,7 @@ div{
     background-color: rgb(153, 221, 187);
     
 }
+
 #images{
     display: inline-block;
     /* width: 1%; */
@@ -78,11 +81,14 @@ div{
     padding: 10%;
 
 }
-#foot{
-    color: blueviolet;
+
+ /* #foot{ */
+   footer{
+        color: rgb(58, 23, 9);
     background-color: burlywood;
     font-family: 'Kirang Haerang', cursive;
-}
+    text-decoration: none;
+} 
 
 
 
@@ -98,7 +104,7 @@ th {
 }
 
 
- form{
+form{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: cornsilk;
@@ -112,8 +118,7 @@ th {
   }
 
   /* background */
-
-  body {
+ body {
     -webkit-animation: colorchange 20s infinite;
     animation: colorchange 20s infinite;
   }

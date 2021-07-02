@@ -67,13 +67,6 @@ function createFooter() {
     let tdEl = document.createElement('td');
 
 
-
-
-// window.tfootEl=footer;
-
-
-
-
     tdEl.textContent = 'Totals';
     tfootEl.appendChild(tdEl);
     tableEl.appendChild(tfootEl);
@@ -118,7 +111,8 @@ for (let i = 0; i < shops.length; i++) {
 
 createFooter();
 
-// ***************************************************/
+
+// ******************Create Form*********************************/
 let myForm = document.getElementById('myForm');
 
 myForm.addEventListener('submit', addLocation);
@@ -136,19 +130,20 @@ function addLocation(event) {
     // avg
     let getAvgNumber = event.target.getAvgNumber.value;
 
-
     let newLocation = new Shop(getLocationName, getMinNumber, getMaxNumber, getAvgNumber);
 
+
     
-    shops.push(newLocation);
-     newLocation.calcRandCustPerH();
+    newLocation.calcRandCustPerH();
     newLocation.calAvgCookiesPerH();
     newLocation.render();
- 
+
+       // rest last row in the table
     tableEl.deleteTFoot();
+    // add anew row
     createFooter();
-    // rest last row in the table
-    // footer.textContent= null;
+ 
+
 
 }
 
